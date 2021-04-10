@@ -1,0 +1,204 @@
+:root{
+  --blue: rgb(153, 213, 214);
+  --midblue: rgb(83, 108, 143);
+  --darkblue: rgb(53, 56, 65);
+  --greenish: #89e097;
+}
+
+
+* {
+   overflow: visible;
+   margin: 0;
+   padding: 0;
+ }
+header {
+  display: flex;
+  /* position: absolute;
+  top: 0; */
+  height: 85px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--darkblue);
+  color: #fff;
+  margin-bottom: 20px;
+  /* padding: 1%; */
+  
+}
+
+h1 {
+  color: var(--darkblue);
+  background-color: var(--blue);
+  line-height: 100%;
+  padding: 10px;
+  /* position: relative;
+  left: -10px; */
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+nav a {
+  color: var(--blue);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+
+
+/* ---------------------------------------------------- */
+
+
+
+.application {
+  position: relative;
+  margin: 20px;
+  border: var(--blue) solid 5px;
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* justify-content: space-evenly; */
+  background-color: yellow;
+}
+
+.app-title {
+  position: absolute;
+  padding-left: 10px;
+  padding-right: 10px;
+  top: 40%;
+  left: 0;
+  background-color: var(--blue);
+  color: var(--darkblue)
+}
+
+#app1:hover, 
+#app2:hover,
+#app3:hover,
+#app4:hover,
+#app5:hover {
+  box-shadow: inset 0px 0px 8px var(--greenish), 0 0 15px var(--greenish);
+  opacity: .7;
+}
+
+#first,  #app1 {
+  width: 100%;
+  flex-direction: row;
+}
+
+#second, #third, #fourth, #fifth {
+  width: 42%;
+  flex-grow: 1;
+
+}
+
+#second, #fourth {
+  position: relative;
+  left: 0;
+  /* margin-left: 0; */
+  /* justify-content: flex-start; */
+
+}
+
+ #third,  #fifth {
+  justify-content: flex-end;
+
+}
+
+#app1, #app2, #app3, #app4, #app5 {
+  min-height: 200px;
+  background-size: 100%;
+}
+
+#app2, #app3, #app4, #app5 {
+
+  width: 100%;
+  /* flex-grow: .5; */
+}
+
+#app1 {
+  /* width: 100%; */
+  /* flex-grow: 1; */
+  background-image: url("../images/beaches.jpeg");
+}
+#app2 {
+  background-image: url("../images/parkRoyal.jpg");
+
+}
+#app3 {
+  background-image: url("../images/Singapore.jpg");
+
+}
+#app4 {
+  background-image: url("../images/hagia.jpg");
+}
+#app5 {
+  background-image: url("../images/bhutan.jpg");
+}
+
+/* ---------------------------------------------------- */
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+aside {
+  width: 10%;
+  margin: 10px 10px;
+  text-align: right;
+  padding-right: 10px;
+  border-right: 5px solid var(--darkblue);
+  color: var(--darkblue);
+}
+
+.content {
+  width: 75%;
+}
+
+@media screen and (max-width: 800px) {
+  aside {
+  width: 12%;
+}
+}
+
+
+@media screen and (max-width: 650px) {
+  section {
+    flex-direction: column;
+  }
+  aside {
+  width: 90%;
+  border-bottom: 3px solid var(--darkblue);
+  border-right: none;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  /* line-height: 75%; */
+  }
+  .content {
+    flex-direction: column;
+    width: 90%;
+    text-align: left;
+    justify-content: center;
+    /* margin: 10px;
+    padding: 10px; */
+  }
+  #first, #second, #third, #fourth, #fifth {
+    width: 90%;
+    flex-grow: 1;
+  
+  }
+}
