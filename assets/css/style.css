@@ -4,7 +4,10 @@
   --darkblue: rgb(53, 56, 65);
   --greenish: #89e097;
 }
-
+ /* smooth scroll because why not */
+html {
+  scroll-behavior: smooth;
+}
 
 * {
    overflow: visible;
