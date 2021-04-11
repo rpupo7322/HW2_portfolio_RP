@@ -10,18 +10,21 @@
    overflow: visible;
    margin: 0;
    padding: 0;
- }
-header {
+}
+
+body {
+  background-color: linen;
+}
+
+ header {
   display: flex;
-  /* position: absolute;
-  top: 0; */
   height: 85px;
   justify-content: space-between;
   align-items: center;
   background-color: var(--darkblue);
   color: #fff;
   margin-bottom: 20px;
-  /* padding: 1%; */
+
   
 }
 
@@ -30,8 +33,7 @@ h1 {
   background-color: var(--blue);
   line-height: 100%;
   padding: 10px;
-  /* position: relative;
-  left: -10px; */
+
 }
 
 nav ul {
@@ -55,7 +57,9 @@ li {
   list-style-type: none;
 }
 
-
+p {
+  margin-top: 20px;
+}
 
 
 /* ---------------------------------------------------- */
@@ -125,6 +129,27 @@ li {
   width: 100%;
   /* flex-grow: .5; */
 }
+/* #me {
+  background-image: url("../images/me.png");
+  background-size: 100%;
+  width: 100%;
+  height: auto;
+  /* height: 75px; */
+  /* min-width: 75px; */
+  /* border: 2px solid white; */ 
+  /* margin-right: 7px;
+  margin-left: 20px; */
+  /* position: inline; */
+  /* left: -20%; */
+/* } */
+
+
+#me {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+
+}
 
 #app1 {
   /* width: 100%; */
@@ -178,6 +203,8 @@ aside {
 @media screen and (max-width: 650px) {
   section {
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
   }
   aside {
   width: 90%;
@@ -199,6 +226,11 @@ aside {
   #first, #second, #third, #fourth, #fifth {
     width: 90%;
     flex-grow: 1;
-  
+  }
+  p {
+    margin: 20px;
+  }
+  #me {
+    width: 25%
   }
 }
