@@ -16,6 +16,9 @@ body {
   background-color: linen;
 }
 
+
+/* ----------------------------- */
+/* section to create the header */
  header {
   display: flex;
   height: 85px;
@@ -42,14 +45,15 @@ nav ul {
   min-width: 300px;
 }
 
-nav a {
+nav a, li {
   color: var(--blue);
   font-weight: bold;
   text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover, nav li:hover {
   color: #fff;
+  cursor: pointer;
 }
 
 li {
@@ -57,122 +61,8 @@ li {
   list-style-type: none;
 }
 
-p {
-  margin-top: 20px;
-}
-
-
-/* ---------------------------------------------------- */
-
-
-
-.application {
-  position: relative;
-  margin: 20px;
-  border: var(--blue) solid 5px;
-  /* display: flex;
-  flex-wrap: wrap; */
-  /* justify-content: space-evenly; */
-  background-color: yellow;
-}
-
-.app-title {
-  position: absolute;
-  padding-left: 10px;
-  padding-right: 10px;
-  top: 40%;
-  left: 0;
-  background-color: var(--blue);
-  color: var(--darkblue)
-}
-
-#app1:hover, 
-#app2:hover,
-#app3:hover,
-#app4:hover,
-#app5:hover {
-  box-shadow: inset 0px 0px 8px var(--greenish), 0 0 15px var(--greenish);
-  opacity: .7;
-}
-
-#first,  #app1 {
-  width: 100%;
-  flex-direction: row;
-}
-
-#second, #third, #fourth, #fifth {
-  width: 42%;
-  flex-grow: 1;
-
-}
-
-#second, #fourth {
-  position: relative;
-  left: 0;
-  /* margin-left: 0; */
-  /* justify-content: flex-start; */
-
-}
-
- #third,  #fifth {
-  justify-content: flex-end;
-
-}
-
-#app1, #app2, #app3, #app4, #app5 {
-  min-height: 200px;
-  background-size: 100%;
-}
-
-#app2, #app3, #app4, #app5 {
-
-  width: 100%;
-  /* flex-grow: .5; */
-}
-/* #me {
-  background-image: url("../images/me.png");
-  background-size: 100%;
-  width: 100%;
-  height: auto;
-  /* height: 75px; */
-  /* min-width: 75px; */
-  /* border: 2px solid white; */ 
-  /* margin-right: 7px;
-  margin-left: 20px; */
-  /* position: inline; */
-  /* left: -20%; */
-/* } */
-
-
-#me {
-  width: 100%;
-  height: auto;
-  margin-top: 10px;
-
-}
-
-#app1 {
-  /* width: 100%; */
-  /* flex-grow: 1; */
-  background-image: url("../images/beaches.jpeg");
-}
-#app2 {
-  background-image: url("../images/parkRoyal.jpg");
-
-}
-#app3 {
-  background-image: url("../images/Singapore.jpg");
-
-}
-#app4 {
-  background-image: url("../images/hagia.jpg");
-}
-#app5 {
-  background-image: url("../images/bhutan.jpg");
-}
-
-/* ---------------------------------------------------- */
-
+/* ----------------------- */
+/* section to create structure of the content */
 section {
   display: flex;
   flex-wrap: wrap;
@@ -193,12 +83,110 @@ aside {
   width: 75%;
 }
 
+
+/* styling for the About Me section */
+p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: var(--darkblue)
+}
+
+#me {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+
+
+
+/* Styling for the applications section */
+.application {
+  position: relative;
+  margin: 20px;
+  border: var(--blue) solid 5px;
+  background-color: yellow;
+}
+
+.app-title {
+  position: absolute;
+  padding-left: 10px;
+  padding-right: 10px;
+  top: 40%;
+  left: 0;
+  background-color: var(--blue);
+  color: var(--darkblue)
+}
+
+
+/* hover effects for the applications */
+#app1:hover, 
+#app2:hover,
+#app3:hover,
+#app4:hover,
+#app5:hover {
+  box-shadow: inset 0px 0px 8px var(--greenish), 0 0 15px var(--greenish);
+  opacity: .7;
+  cursor:pointer;
+}
+
+/* Make the first application appear larger */
+#first {
+  width: 100%;
+  flex-direction: row;
+}
+
+/* Making sure the other applications appear smaller */
+#second, #third, #fourth, #fifth {
+  width: 42%;
+  flex-grow: 1;
+
+}
+
+/* Setting dimensions of the background picture display for applications */
+#app1, #app2, #app3, #app4, #app5 {
+  min-height: 200px;
+  background-size: 100%;
+  width: 100%;
+}
+
+/* linking background images for applications */
+#app1 {
+  background-image: url("../images/beaches.jpeg");
+}
+#app2 {
+  background-image: url("../images/parkRoyal.jpg");
+}
+#app3 {
+  background-image: url("../images/Singapore.jpg");
+}
+#app4 {
+  background-image: url("../images/hagia.jpg");
+}
+#app5 {
+  background-image: url("../images/bhutan.jpg");
+}
+
+
+/* Contact Me section  */
+
+#contactInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#contactInfo li {
+  margin: 10px;
+  color: var(--darkblue)
+}
+
+/* media queries to make the page responsive */
 @media screen and (max-width: 800px) {
   aside {
   width: 12%;
 }
 }
-
 
 @media screen and (max-width: 650px) {
   section {
@@ -213,15 +201,12 @@ aside {
   text-align: center;
   margin-bottom: 0px;
   padding-bottom: 0px;
-  /* line-height: 75%; */
   }
   .content {
     flex-direction: column;
     width: 90%;
     text-align: left;
     justify-content: center;
-    /* margin: 10px;
-    padding: 10px; */
   }
   #first, #second, #third, #fourth, #fifth {
     width: 90%;

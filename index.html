@@ -12,10 +12,11 @@
         <h1>Robert Pupo</h1>
         <div>
             <nav class = "text-right"><ul>
+                    <!-- Linking these list items to sections of page -->
                     <li><a href="#AboutMe">About Me</a></li>
                     <li><a href="#Work">Work</a></li>
                     <li><a href="#Contact">Contact Me</a></li>
-                    <li><a href="./assets/resume.pdf">Resume</a></li>
+                    <li id = 'resume'>Resume</li>
                     <li></li>
                 </ul>
             </nav>   
@@ -27,10 +28,11 @@
                 <img id = 'me' src = "./assets/images/me.png" alt = 'Me'>
         </aside>
         <section class = "content">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magni, explicabo numquam illo accusamus
-                 cum quis accusantium nesciunt sit nobis repellat. Illo, aspernatur aliquam nulla architecto ratione 
-                 amet molestias facilis quaerat perspiciatis quasi esse qui necessitatibus assumenda hic laudantium enim 
-                 dolorum! Iusto doloribus dignissimos ut maxime vel excepturi dolorem natus.</p>
+            <p>Experienced finance professional with a background in integrating capital markets datasets into data warehousing
+                environments. Currently taking part in a coding bootcamp through UNC Chapel Hill with the intention of expaning
+                my coding knowledge and gaining skills in: HTML5, CSS3, JavaScript, jQuery, Express.js, React.js, Node.js
+                , progressive web apps, agile methodology, computer science, database theory, MongoDB, MySQL, Git, and more.
+            </p>
         </section>
     </section>
     <section id = "Work">
@@ -75,7 +77,14 @@
     </section>
     <section id = "Contact">
         <aside><h2>Contact Me</h2></aside>
-        <section class = "content"></section>
+        <section class = "content">
+            <ul id = 'contactInfo'>
+                <li>555.555.5555</li>
+                <li><a href = '#'>SampleEmail@gmail.com</a></li>
+                <li>123 Address St, North Carolina 5555</li>
+            </ul>
+        </section>
     </section>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
