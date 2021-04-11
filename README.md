@@ -14,3 +14,7 @@ WHEN I click on the images of the applications
 THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
+
+Screenshots of webpage:
+https://github.com/rpupo7322/HW2_portfolio_RP/blob/main/webpageImages/webpage1.PNG
+https://github.com/rpupo7322/HW2_portfolio_RP/blob/main/webpageImages/webpage2.PNG
