@@ -155,10 +155,10 @@ p {
 
 /* linking background images for applications */
 #app1 {
-  background-image: url("../images/beaches.jpeg");
+  background-image: url("https://user-images.githubusercontent.com/78604328/118205119-ac2b9f00-b42d-11eb-9d1a-17e337ddb36b.png");
 }
 #app2 {
-  background-image: url("../images/parkRoyal.jpg");
+  background-image: url("https://github.com/rpupo7322/HW3_PasswordGenerator_RP/blob/main/websitePics/PopupPasswordPreferences.PNG?raw=true");
 }
 #app3 {
   background-image: url("../images/Singapore.jpg");
