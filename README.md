@@ -18,3 +18,8 @@ THEN I am presented with a responsive layout that adapts to my viewport
 Screenshots of webpage:
 https://github.com/rpupo7322/HW2_portfolio_RP/blob/main/webpageImages/webpage1.PNG
 https://github.com/rpupo7322/HW2_portfolio_RP/blob/main/webpageImages/webpage2.PNG
+
+Applications shown:
+1. The Dawn Patrol - A surf forecast displaying current and upcoming weather & tide information for key surf locations on the NC coast. My primary contribution to this project involved connecting to the Surfline API and building the central surf forecast display.
+
+2. Password Generator - This application allows the user to select from a series of parameters to generate a randomized password displayed on the webpage. 
